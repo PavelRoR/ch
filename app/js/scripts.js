@@ -36,7 +36,11 @@ $(function () {
 		}
 	});
 });
-
+/* Слайдер */
+$(".carousel").carousel({
+	interval: 0,
+	pause: "hover"
+});
 
 	/* Конец документа*/ 
 });
