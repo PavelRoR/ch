@@ -38,9 +38,13 @@ $(function () {
 });
 /* Слайдер */
 $(".carousel").carousel({
-	interval: 0,
+	interval: 5000,
 	pause: "hover"
 });
-
+/* Видео */
+$(".video_img").click(function () {
+	var a = $(this).attr("data-youtube");
+	$(this).html('<iframe src="https://www.youtube.com/embed/' + a + '?showinfo=0&rel=0&autoplay=1" frameborder="0" class="video_testimonial" allowfullscreen></iframe>')
+});
 	/* Конец документа*/ 
 });

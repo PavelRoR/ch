@@ -2,6 +2,28 @@ footer#footer
 	.container
 		p ИП Кудряшов Александр Анатольевич г. Москва, Новокуркинское шоссе, 27 ИНН 720410077658 ОГРН 315723200065100 
 		a.conditions(href="http://mastervision.su/oferta.docx") Условия возврата денежных средств
+.modal.fade(tabindex="-1" role="dialog")#myModalForm
+	.modal-dialog(role="document")
+		.modal-content
+			button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+				span(aria-hidden="true") &times;
+			.modal-body
+				form#modalForm(action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&id=3568&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results").form_newsletter
+					h3.infront Запишись сейчас и получи бонус!
+					p.infront_submit.hide
+					p.infront Медитация «Встреча с тотемным животным»
+					p.span_phone.hide
+					.email-block
+						input( type="hidden" value="1" name="required_fields[email]")
+						input(class="mail required" maxlength="255" name="Contact[email]" type="text" placeholder="Ваш email")
+					.phone-block.hide
+						input(type="hidden" value="0" name="required_fields[phone_number]")
+						input(class="phone" maxlength="255" name="Contact[phone_number]" type="number" placeholder="79333333333")
+					button(type="submit").button Записаться
+					<!--Обязательный параметр. Не удалять и не изменять!-->
+					input(type="hidden" value="280" name="Contact[id_newsletter]")
+					<!--API код канала рекламы-->
+					input(type="hidden" value="0" name="Contact[id_advertising_channel_page]")
 .modal.fade(tabindex="-1" role="dialog")#myModal
 	.modal-dialog(role="document")
 		.modal-content

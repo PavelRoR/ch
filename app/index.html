@@ -2,6 +2,17 @@
 <html lang="ru"></html>
 <head>
   <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <meta name="author" content="Master Vision"/>
+  <meta name="description" content="«Рождественские ритуалы на богатство и любовь» от Софии Вюрстлин"/>
+  <meta name="keywords" content=""/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="revisit-after" content="7 days"/>
+  <meta property="og:image" content="https://www.mastervision.su/christmas_rites/img/poster.jpg"/>
+  <link rel="icon" type="image/x-icon" href="img/favicon.png"/>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"/>
+  <link rel="appendix" href="/sitemap/"/>
   <title>Рождественские ритуалы | София Вюрстлин</title>
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/styles.css"/>
@@ -16,7 +27,7 @@
       <h2>от Софии Вюрстлин</h2>
       <div class="col-md-6">
         <div class="video_wrapper">
-          <iframe src="https://www.youtube.com/embed/nrNzFWZOfAI?rel=0&amp;autoplay=0"></iframe>
+          <iframe src="https://www.youtube.com/embed/nrNzFWZOfAI?rel=0&amp;autoplay=0" allowfullscreen="allowfullscreen"></iframe>
         </div>
       </div><img id="sophia" src="img/sophia.png" alt="София Вюрстлин"/>
     </div>
@@ -88,7 +99,7 @@
           </div>
         </div>
       </div>
-      <button class="button">Участвовать</button>
+      <button class="button" data-toggle="modal" data-target="#myModalForm">Участвовать</button>
     </div>
   </section>
   <section id="third_section">
@@ -111,7 +122,7 @@
       </ul>
       <div id="about_veb">
         <p>На этом вебинаре я расскажу Вам о предстоящей встрече в Москве, в период Рождественских каникул. Мы поговорим о  магии Святок, благодаря которой Вы сможете воплощать свои заветные мечты, реализовать желания и управлять судьбой, как по мановению волшебной палочки. Вы также узнаете о том, как притянуть в свою жизнь и навсегда оставить рядом Любовь, Богатство, Удачу и Счастье. </p>
-        <button class="button">Участвовать</button>
+        <button class="button" data-toggle="modal" data-target="#myModalForm">Участвовать</button>
       </div>
     </div>
   </section>
@@ -195,25 +206,13 @@
             </ol>
             <div class="carousel-inner" role="listbox">
               <div class="item active">
-                <div class="carousel-caption video_wrapper">
-                  <div class="wrapper">
-                    <iframe class="video_testimonial" src="https://www.youtube.com/embed/YiG6T6GSWBs?rel=0" frameborder="0" gesture="media" allowfullscreen="allowfullscreen"></iframe>
-                  </div>
-                </div>
+                <div class="carousel-caption video_wrapper video_img" data-youtube="YiG6T6GSWBs"><img class="video_testimonial" src="img/video_1.jpg" alt="Видео-отзыв 1"/></div>
               </div>
               <div class="item">
-                <div class="carousel-caption video_wrapper">
-                  <div class="wrapper">
-                    <iframe class="video_testimonial" src="https://www.youtube.com/embed/Ijx7PDX8BVw?rel=0" frameborder="0" gesture="media" allowfullscreen="allowfullscreen"></iframe>
-                  </div>
-                </div>
+                <div class="carousel-caption video_wrapper video_img" data-youtube="Ijx7PDX8BVw"><img class="video_testimonial" src="img/video_2.jpg" alt="Видео-отзыв 2"/></div>
               </div>
               <div class="item">
-                <div class="carousel-caption video_wrapper">
-                  <div class="wrapper">
-                    <iframe class="video_testimonial" src="https://www.youtube.com/embed/jO63P4NZLNc?rel=0" frameborder="0" gesture="media" allowfullscreen="allowfullscreen"></iframe>
-                  </div>
-                </div>
+                <div class="carousel-caption video_wrapper video_img" data-youtube="jO63P4NZLNc"><img class="video_testimonial" src="img/video_3.jpg" alt="Видео-отзыв 3"/></div>
               </div>
             </div>
           </div>
@@ -226,6 +225,32 @@
       <p>ИП Кудряшов Александр Анатольевич г. Москва, Новокуркинское шоссе, 27 ИНН 720410077658 ОГРН 315723200065100 </p><a class="conditions" href="http://mastervision.su/oferta.docx">Условия возврата денежных средств</a>
     </div>
   </footer>
+  <div class="modal fade" tabindex="-1" role="dialog" id="myModalForm">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-body">
+          <form class="form_newsletter" id="modalForm" action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&amp;id=3568&amp;lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results">
+            <h3 class="infront">Запишись сейчас и получи бонус!</h3>
+            <p class="infront_submit hide"></p>
+            <p class="infront">Медитация «Встреча с тотемным животным»</p>
+            <p class="span_phone hide"></p>
+            <div class="email-block">
+              <input type="hidden" value="1" name="required_fields[email]"/>
+              <input class="mail required" maxlength="255" name="Contact[email]" type="text" placeholder="Ваш email"/>
+            </div>
+            <div class="phone-block hide">
+              <input type="hidden" value="0" name="required_fields[phone_number]"/>
+              <input class="phone" maxlength="255" name="Contact[phone_number]" type="number" placeholder="79333333333"/>
+            </div>
+            <button class="button" type="submit">Записаться</button><!--Обязательный параметр. Не удалять и не изменять!-->
+            <input type="hidden" value="280" name="Contact[id_newsletter]"/><!--API код канала рекламы-->
+            <input type="hidden" value="0" name="Contact[id_advertising_channel_page]"/>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
